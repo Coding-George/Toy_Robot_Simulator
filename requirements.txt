@@ -1,0 +1,10 @@
+# Toy Robot Simulator - Requirements
+# This project uses only Python standard library modules
+# No external dependencies required
+
+# Python version requirement
+# python>=3.7
+
+
+# Note: This project currently has no external dependencies
+# All functionality is implemented using Python standard library
