@@ -65,6 +65,33 @@ print(robot.report())  # Output: 1,1,EAST
 python ToyRobot.py
 ```
 
+### Interactive Console Application
+
+For an interactive experience, use the console application:
+
+```bash
+python ToyRobot_ConsoleApp.py
+```
+
+The console application provides a user-friendly interface with:
+
+- **Interactive Commands**: Type commands directly into the console
+- **Visual Table Display**: See the robot's position with directional arrows (↑ ↓ → ←)
+- **Real-time Feedback**: Immediate confirmation of actions and errors
+- **Built-in Help**: Type `HELP` to see all available commands
+- **Input Validation**: Helpful error messages for invalid commands
+
+#### Console Commands
+
+- `PLACE X,Y,F` - Place robot at position (X,Y) facing direction F
+  - Example: `PLACE 0,0,NORTH`
+- `MOVE` - Move robot one step forward
+- `LEFT` - Turn robot 90 degrees left
+- `RIGHT` - Turn robot 90 degrees right
+- `REPORT` - Show robot's current position
+- `HELP` - Display command help
+- `QUIT` or `EXIT` - Exit the application
+
 ## Robot Commands
 
 The robot understands the following commands:
@@ -157,11 +184,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Future Enhancements
 
 - [ ] GUI interface with Tkinter
-- [ ] Command-line interface for interactive use
+- [x] Command-line interface for interactive use ✅
 - [ ] Multiple robots on the same table
 - [ ] Obstacle placement and navigation
 - [ ] Path recording and playback
 - [ ] Unit tests with pytest
 - [ ] Configuration file support
+- [ ] Command history and replay functionality
+- [ ] Save/load robot sessions
 
 ---
