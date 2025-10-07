@@ -170,6 +170,43 @@ robot.move()
 print(robot.report())  # Expected: 3,3,NORTH
 ```
 
+## Unit Tests
+
+This project includes comprehensive unit tests to ensure the robot functionality works correctly.
+
+### Running Tests
+
+To run the unit tests, use the following command:
+
+```bash
+python run_tests.py
+```
+
+### Test Coverage
+
+The test suite includes 12 unit tests covering:
+
+- **Core Functionality**: Placement, movement, rotation, and reporting
+- **Edge Cases**: Boundary protection and invalid input handling
+- **Error Handling**: Commands before placement and invalid coordinates
+- **Input Validation**: Case sensitivity and coordinate bounds
+
+### Test Results
+
+```
+Running ToyRobot Unit Tests...
+==================================================
+Ran 12 tests in 0.002s
+All 12 tests passed!
+```
+
+The unit tests ensure the robot:
+
+- Prevents falling off the table
+- Validates all input parameters
+- Handles edge cases gracefully
+- Maintains state correctly
+
 ## Safety Features
 
 - **Boundary Protection**: Robot cannot move outside the 5x5 table
@@ -188,7 +225,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [ ] Multiple robots on the same table
 - [ ] Obstacle placement and navigation
 - [ ] Path recording and playback
-- [ ] Unit tests with pytest
+- [x] Unit tests with unittest ✅
 - [ ] Configuration file support
 - [ ] Command history and replay functionality
 - [ ] Save/load robot sessions
